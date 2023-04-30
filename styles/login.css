@@ -1,0 +1,307 @@
+body{
+	background-color: black
+}
+
+
+
+.log-details{
+	/*border-color: #fb8b23;*/
+	/*width: 0%;*/
+	height: 12vh;
+	background-color:  transparent;
+	font-family: 'Unbounded', cursive;
+	/*border:none; */
+	color: white;
+}
+
+.log-details:hover,
+.log-details:focus {
+	box-shadow: none;
+	border-color: #fff;
+	background-color: transparent;
+	color: white;
+}
+
+.log-btn{
+	height: 10vh;
+	background-color: #fb8b23;
+	width: 75%;
+	text-align: center;
+	color: white;
+}
+.log-btn:hover,
+.log-btn:focus {
+	box-shadow: none;
+	color: white;
+}
+
+/*========otp===========*/
+	.otp{
+		height: 10vh;
+		width: 60%;
+		background-color: transparent;
+		font-family: 'Unbounded', cursive;
+		color: white;
+		text-align: center;
+	}
+
+	.otp:hover,
+	.otp:focus {
+		box-shadow: none;
+		border-color: #fff;
+		background-color: transparent;
+		color: white;
+	}
+
+	.otp-input{
+		background-color: transparent;
+		color: white;
+		border-bottom: 2px solid #fff;
+		border-bottom-right-radius: 1px;
+		border-bottom-left-radius: 1px;
+		border-top: none;
+		border-right: none;
+		border-left: none;
+		width: 50%;
+		text-align: center;
+		font-family: 'Unbounded', cursive;
+	}
+
+	.otp-input:hover,
+	.otp-input:focus {
+		box-shadow: none;
+		background-color: transparent;
+		color: white;
+	}
+
+/*==========otp end=======*/
+
+
+
+
+/*=====================sign up=================
+	.input-switch:hover,
+	.input-switch:focus {
+		box-shadow: none;
+		/*background-color: #fb8b23;;*/
+		border-color: transparent;
+	}
+
+	.btn-right:hover,
+	.btn-right:focus {
+		box-shadow: none;
+		border-color: transparent;
+	}
+
+	.close-right:hover,
+	.close-right:focus {
+		box-shadow: none;
+		/*border-color: transparent;*/
+	}
+/*======================sign up end=============*/
+
+
+/*=================affiliate==================*/
+	.par-aff{
+		font-size: 11px;
+		font-family: 'Unbounded', cursive;
+		color: white;
+		text-align: justify;
+		line-height: 3;
+		margin-top: 2rem;
+	}
+
+	.par-aff2{
+		border-left: 3px solid white;
+		color: white;
+		font-size: 11px;
+		line-height: 2;
+		justify-content: space-between;
+
+	}
+/*===================affiliate end ===============*/
+
+
+/*=================accordin====================*/
+	.accor-btn:hover,
+	.accor-btn:focus {
+		box-shadow: none;
+		/*border-color: transparent;*/
+	}
+/*====================accordin end===============*/
+
+
+/*================contact=================*/
+	.modal-inputt: {
+		background-color: red;
+	}
+
+	.modal-inputt:hover,
+	.modal-inputt:focus {
+		box-shadow: none;
+		border-color: transparent;
+	}
+
+/*==================contact end ===============*/
+
+/*=============get started button================*/
+	.area{
+		background:url("../images/dotted.png");
+		background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+		position: relative;
+		padding: 60px 10px 100px 10px;
+		font-size: 18px;
+		line-height: 30px;
+		background-color: #000
+	}
+
+	.area:after {
+		/*content: '';*/
+		position: absolute;
+		background: rgba(0, 0, 0, 0.5);
+		top: 0;
+		left:0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.gs-btn{
+		border-color:  #fb8b23;
+		font-family: 'Unbounded', cursive;
+		color: white;
+		/*width: 50%;*/
+		height: 8vh;
+		border-radius: 1px;
+		margin-top: 2rem;
+	}
+	
+	.gs-btn:hover,
+	.gs-btn:focus {
+		box-shadow: none;
+		border-color: transparent;
+		background-color:  #fb8b23;
+	}
+
+	.gs-text h2{
+		font-size: 20px;
+		color: #e7e9ea;
+	}
+
+	.gs-text p{
+		color: #e7e9ea;
+	}
+
+/*================get started button end===========*/
+
+
+/*.fucking-background{
+	
+		background-image: linear-gradient(180deg, rgba(0, 0, 0, 8) 0%, rgba(0, 0, 0, 0.6) 90%),url(../images/gold.jpg);
+		min-height: 30rem;
+  		padding-top: 1rem;
+  		padding-bottom: 8rem;
+  		text-align: center;
+  		background-color: #121212;
+ 		background-repeat: no-repeat;
+  		background-size: cover;
+  		background-position: center;
+  		position: relative;
+}*/
+
+/*.particle-body{
+	height: 27rem;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/gold.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	text-align: center;
+}*/
+
+.particle-body{
+	/*margin-top: 3rem;*/
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/gold.jpg");
+	 background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	color: #f1f1f1;
+	padding:40px 10px 80px 10px;
+	position: relative;
+	z-index: 1;
+	color: #fff;
+	background-color:#000;
+	overflow: hidden;
+}
+
+.particle-body:after {
+	content: '';
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	z-index: -2
+}
+
+#particles-js{
+	position:absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	/*background-image: url("");*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	z-index: 1;
+}
+
+.particle-text{
+	color: white;
+	margin-top: 10rem;
+	font-family: 'Unbounded', cursive;
+	text-align: center;  
+}
+
+.particle-text h1 span{
+	color: #fb8b23;
+}
+
+.particle-text p span{
+	color: #fb8b23;
+	font-size: 12px;
+}
+
+.particle-text p{
+	font-size: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+ 	.the-row{
+ 		margin-top: 6.5rem;
+ 	}
+}
+
+/*@media only screen and (max-width: 1025px) {
+ 	
+}*/
+
+
+
+
+/*<div class="center">
+                  <div class="slider">
+                    <div class="show-value">
+                      <span id="current-value">100</span>
+                    </div>
+                    <input type="range" id="custom-slider" min="60000" max="100000" value="80000"  data-prefix="$ "step="1" name="">
+                    <div class="range">
+                      <div>$60000 <div class="letters">Minimum</div></div>
+                      <div>$100000 <div class="text-center">Maximum</div></div>
+                    </div>
+                  </div>
+                </div>*/

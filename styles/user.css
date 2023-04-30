@@ -1,0 +1,301 @@
+body{
+	/*background-image: url("../images/test2.png");*/
+	/*background-image: linear-gradient(rgba(225, 225, 225, 0.8), rgba(225, 225, 225, 0.8)),url("../images/particles.png");*/
+	background-color: #000000;
+	
+}
+
+
+/*.note-bar{
+	display: flex;
+	justify-content: flex-start;
+}
+*/
+
+
+
+
+.big-note-bar{
+	margin-top: 4%;
+}
+
+
+.otu{
+	margin-top: -7%;
+}
+
+
+
+
+
+.table-section{
+	margin-top: 40px;
+}
+
+.table-section table{
+	font-family: 'Unbounded', cursive;
+	font-size: 12px;
+	background: black;
+	color: white;
+	height: 53vh;
+	border-radius: 10px;
+	/*box-shadow: 0 0 50px #ccc;*/
+}
+
+.note-bar{
+	margin-top: 4.5%;
+	background-color: #fb8b23; /*white*/
+	color: black;
+}
+
+.card-plate{
+	font-family: 'Unbounded', cursive;
+	color: #000000;
+	margin-bottom: -3%;
+}
+
+.user-card .card{
+	border-radius: 6px;	
+	border-left: 4px solid #fb8b23;
+	background-color: #F4F6FF; /*#fb8b23*/
+}
+
+.copy-button{
+	font-family: 'Unbounded', cursive;
+	font-size: 12px;
+	background: none;
+
+	
+}
+
+.main-copy{
+	align-self: center;
+}
+
+.small-copy{
+	font-family: 'Unbounded', cursive;	
+	margin-left: 1.8rem;
+	font-size: 12px;
+}
+
+.copy-button:hover,
+.copy-button:focus {
+  	/*border-color: none;
+  	background-color: none;*/
+  	box-shadow: none;
+  	/*color: white;*/
+}
+
+.b-copy:hover,
+.b-copy:focus {
+  	/*border-color: none;
+  	background-color: none;*/
+  	box-shadow: none;
+  	/*color: white;*/
+}
+
+.notifi{
+	/*float: right;*/
+	display: flex;
+	justify-content: flex-end;
+	margin-left: -30px;
+}
+
+.welcome-dash{
+	margin-top: 20%;
+}
+
+.address-width{
+	width: 100%;
+}
+
+.address-bar{
+	height: 11vh;
+}
+
+.address-bar:hover,
+.address-bar:focus {
+	box-shadow: none;
+	/*border-color: #fff;*/
+	/*background:transparent;*/
+	/*color: #fff;*/
+}
+
+.address-bar input:read-only{
+	background-color: red;
+}
+
+
+
+.typing-demo{
+	width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+.withdraw{
+	height: 11vh;
+	background-color: transparent;
+	color: #fff;
+}
+
+.withdraw:hover,
+.withdraw:focus {
+	box-shadow: none;
+	border-color: #fff;
+	background:transparent;
+	color: #fff;
+}
+
+.withdraw-btn{
+	/*border-color: #fb8b23;*/
+	width: 80%;
+	height: 10vh;
+	background-color:  #fb8b23;
+	color: white;
+
+}
+
+.withdraw-btn:hover{
+	/*background-color: #fb8b23;*/
+	color: white; 
+}
+
+.withdraw-btn:hover,
+.withdraw-btn:focus {
+	box-shadow: none;
+	/*border-color: orange;*/
+}
+
+.with-section{
+	margin-bottom: -10%;
+}
+
+/**/
+.nav{
+  position: fixed;
+  bottom: 0;
+  width: 105%;
+  height: 55px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  /* background:linear-gradient(rgba(0,0,0,0.9),rgba(28, 28, 46, 0.9)), url("../../images/bg.jpg") no-repeat center; */
+  display: flex;
+  overflow-x: auto;
+  margin-left: -9px;
+  background-color: black;
+
+}
+
+.nav__link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  min-width: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #444444;
+  margin-top: 3px;
+  text-decoration: none;
+  -webkit-tap-highlight-color:transparent;
+  transition: background-color 0.1s ease-in-out;
+}
+.nav__text{
+  margin-top: 5px;
+}
+/**/
+
+.big-cap{
+	font-family: 'Unbounded', cursive;
+}
+
+.logo-chipper{
+	font-family: 'Unbounded', cursive;
+	font-size: 19.5px;
+	margin-top: 6.5px;
+	color: white;
+}
+
+@media only screen and (max-width: 768px) {
+	.table-section{
+		margin-top: -25px;
+	}
+
+	.money{
+		margin-top: 20px;
+	}
+	
+	.note-bar{
+		margin-top: 19%;
+
+	}
+
+	.welcome-dash{
+		margin-top: 13%;
+	}
+
+	.otu{
+		margin-top: -30%;
+	}
+
+	.ta-le{
+		margin-top: 1rem;
+		margin-bottom: 6rem;
+	}
+
+	.logo-chipper{
+		/*margin-left: -20px;*/
+	}
+}
+
+
+/*@media only screen and (max-width: 768px) {
+	
+}
+*/
+@media only screen and (max-width: 769px) and (max-width: 1024px) {
+ 	/*.note-bar{
+ 		margin-top: 12rem;.
+ 		background-color: green;
+ 	}
+*/
+ 	.main-bar{
+ 		margin-top: 17%;
+ 	}
+
+ 	.fuck{
+		margin-left:-2.3rem;
+	}
+}
+
+@media only screen and (max-width: 1025px) {
+ 	.note-bar{
+ 		margin-top: -2.2%;
+ 		/*background-color: red;*/
+ 	}
+
+ 	.otu{
+		margin-top: -14.5%;
+	}
+
+	.small-copy{
+		margin-left: 7rem;
+	}
+}
