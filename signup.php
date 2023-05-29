@@ -147,7 +147,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     $_SESSION['expire'] = $_SESSION['start'] + (40 * 60);
                     $_SESSION['user_id'] = $user_id;
                     $subject = "Thanks for signing up";
-                    sendMail($email, $firstName, $subject, str_replace(["##fullname##", "##username##", '##password##', '##otp##'], [$firstName, $email, $password, $otp], file_get_contents("welcom-email.php")));
+                    sendMail($email, $firstName, $subject, str_replace(['##code##'], [$otp], file_get_contents("otpmail.php")));
                     header("Location:user-dash/");
                     exit();
                } else {

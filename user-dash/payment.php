@@ -14,83 +14,6 @@ if (isset($_SESSION['success']) && isset($_SESSION['msg'])) {
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['pay'])) {
      try {
-          //You have done some magic here ** CHAMBER **
-
-          // //? file upload code //
-          // $target_dir = "uploads/";
-          // $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-          // $uploadOk = 1;
-          // $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-          // // Check if image file is a actual image or fake image
-          // $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-
-          // if ($check === false) {
-          //      print('<script>
-          //                document.addEventListener("DOMContentLoaded", function() {
-          //                toastr.error("Oops! Something went wrong try another payment method. Please try again");
-          //                setTimeout(function() {
-          //                          toastr.clear()
-          //                     }, 5000);
-          //                     })
-          //           </script>');
-          //      $_SESSION['error'] = 1;
-          //      $_SESSION['errorMassage'] = "file is not an image";
-          //      $uploadOk = 0;
-          // }
-
-          // // Check if file already exists
-          // if (file_exists($target_file)) {
-          //      print('<script>
-          //                document.addEventListener("DOMContentLoaded", function() {
-          //                toastr.error("Sorry, file already exists.");
-          //                setTimeout(function() {
-          //                          toastr.clear()
-          //                     }, 5000);
-          //                     })
-          //      </script>');
-          //      $uploadOk = 0;
-          // }
-
-          // // Check file size
-          // if ($_FILES["fileToUpload"]["size"] > 10000000) {
-          //      print('<script>
-          //                document.addEventListener("DOMContentLoaded", function() {
-          //                toastr.error("Sorry, your file is too large.");
-          //                setTimeout(function() {
-          //                          toastr.clear()
-          //                     }, 5000);
-          //                     })
-          //           </script>');
-          //      $uploadOk = 0;
-          // }
-
-          // // Allow certain file formats
-          // if (
-          //      $imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-          //      && $imageFileType != "gif"
-          // ) {
-          //      print('<script>
-          //                document.addEventListener("DOMContentLoaded", function() {
-          //                toastr.error("Sorry, only JPG, JPEG, PNG & GIF files are allowed");
-          //                setTimeout(function() {
-          //                          toastr.clear()
-          //                     }, 5000);
-          //                     })
-          //           </script>');
-          //      $uploadOk = 0;
-          // }
-          // // Check if $uploadOk is set to 0 by an error
-          // if ($uploadOk == 0) {
-          //      print('<script>
-          //                document.addEventListener("DOMContentLoaded", function() {
-          //                toastr.error("Sorry, some files were not uploaded, try again.");
-          //                setTimeout(function() {
-          //                          toastr.clear()
-          //                     }, 5000);
-          //                     })
-          //           </script>');
-          //      // if everything is ok, try to upload file
-          // } else {
           $target_dir = "uploads/";
           $target = $target_dir . basename($_FILES["proof_of_payment"]["name"]);
           $target_file = $_FILES["proof_of_payment"]["name"];
@@ -118,6 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['pay'])) {
                $result = $db->Insert($query, $data);
 
                if ($result) {
+                    sendMail($email, $firstName, $subject, str_replace(['##code##'], [$$otp], file_get_contents("otpmail.php")));
                     print("<script>
                     document.addEventListener('DOMContentLoaded', function() {
                     toastr.success('file uploaded successfully');
